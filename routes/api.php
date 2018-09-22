@@ -20,4 +20,6 @@ Route::group(['middleware' => ['auth:api']], function() {
 
     Route::post('user', 'APIController@getUser');
 
+    Route::post('direccionDesdeCatastro', 'CatastroController@direccionDesdeCatastro');
+
 });
